@@ -6,7 +6,14 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
+}
+
+/* Universal Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* --- Navbar --- */
@@ -24,13 +31,11 @@ body {
 .hero-section {
     padding: 60px 0;
 }
-
 .hero-section h1 {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
-
 .highlight {
     color: #0d6efd;
 }
@@ -51,7 +56,6 @@ body {
     position: relative;
     z-index: 10;
 }
-
 .search-bar {
     background: white;
     border-radius: 12px;
@@ -63,18 +67,18 @@ body {
     position: relative;
 }
 
-/* Search input icon position */
+/* Search input icon */
 .search-input-wrapper i {
     position: absolute;
     left: 15px;
-    top: 60%; /* Adjusted for vertical centering */
-    transform: translateY(-50%); 
+    top: 60%;
+    transform: translateY(-50%);
     color: #6c757d;
 }
 
 .search-input {
     padding-left: 40px;
-    width: 100%; 
+    width: 100%;
 }
 
 /* --- Cards & Icons --- */
@@ -119,7 +123,6 @@ body {
 .brands-section {
     background: #f8f9fa;
 }
-
 .brand-logo {
     max-width: 120px;
     height: auto;
@@ -159,27 +162,28 @@ body {
     gap: 15px;
 }
 
-
 /* ==================================== */
 /* 2. Responsive Adjustments            */
 /* ==================================== */
 
-/* Tablet View (max-width: 992px) */
+/* Tablet (max-width: 992px) */
 @media (max-width: 992px) {
-    /* H1 Size */
     .hero-section h1 {
         font-size: 3rem;
     }
 }
 
-/* Small Tablet / Large Mobile View (max-width: 768px) */
+/* Mobile / Small Tablet (max-width: 768px) */
 @media (max-width: 768px) {
-    /* H1 Size & Alignment */
     .hero-section h1 {
         font-size: 2.5rem;
         text-align: center;
     }
     .hero-section .col-lg-6 {
-        text-align: center; 
+        text-align: center;
+    }
+    .app-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
