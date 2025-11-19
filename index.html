@@ -1,215 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rentcars - Find, book and rent a car</title>
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts (Inter) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- --- Header / Navbar --- -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
-          <img src="./images/Group (1).png" alt="Logo" height="30" class="me-2"> RENTCARS
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-secondary" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Become a renter</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Rental deals</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">How it work</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Why choose us</a></li>
-          </ul>
-          <div class="d-flex align-items-center gap-2">
-            <a href="#" class="btn btn-link fw-bold text-dark">Sign in</a>
-            <a href="#" class="btn btn-primary">Sign up</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- --- Hero Section --- -->
-    <section class="hero-section py-5">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="fw-bold">Find, book and rent a car <span class="text-primary">Easily</span></h1>
-            <p class="lead">Get a car wherever and whenever you need it with your iOS and Android device.</p>
-            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-              <img src="./images/image 2.png" alt="Google Play" class="img-fluid" style="max-width:150px;">
-              <img src="./images/image 3.png" alt="App Store" class="img-fluid" style="max-width:150px;">
+ <div class="col-lg-6">
+                        <!-- TODO: Replace with your silver Audi image (from 1000276773.png) -->
+                        <img src="./images/Audi 1 (5).png" alt="Audicar" width="500px">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="homeitwork">WHY CHOOSE US</div>
+                        <h2>We offer the best experience with our rental deals</h2>
+                        
+                        <div class="mt-5">
+                            <div class="feature-item">
+                                <div class="homeiticone">
+                                    <i class="bi bi-lock-fill"></i>
+                                </div>
+                                <div>
+                                    <h5>Best price guaranteed</h5>
+                                    <p class="text-muted">Find a lower price? We'll refund you 100% of the difference.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="homeiticone">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <div>
+                                    <h5>Experience driver</h5>
+                                    <p class="text-muted">Don't have driver? Don't worry, we have many experienced driver for you.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="homeiticone">
+                                    <i class="bi bi-chat-dots-fill"></i>
+                                </div>
+                                <div>
+                                    <h5>24 hour car delivery</h5>
+                                    <p class="text-muted">Book your car anytime and we will deliver it directly to you.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="homeiticone">
+                                    <i class="bi bi-headset"></i>
+                                </div>
+                                <div>
+                                    <h5>24/7 technical support</h5>
+                                    <p class="text-muted">Have a question? Contact Rentcars support any time when you have problem.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6 text-center">
-            <img src="./images/car 2 1.png" alt="Car" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- --- Search Bar --- -->
-    <section class="search-bar-container py-4 bg-light">
-      <div class="container">
-        <form>
-          <div class="row g-3">
-            <div class="col-lg-3 col-md-6">
-              <label for="location" class="form-label fw-bold">Location</label>
-              <div class="position-relative">
-                <i class="bi bi-geo-alt position-absolute top-50 start-0 translate-middle-y ms-2"></i>
-                <input type="text" class="form-control ps-5" id="location" placeholder="Search your location">
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <label for="pickup-date" class="form-label fw-bold">Pickup date</label>
-              <div class="position-relative">
-                <i class="bi bi-calendar-event position-absolute top-50 start-0 translate-middle-y ms-2"></i>
-                <input type="text" class="form-control ps-5" id="pickup-date" placeholder="Tue 15 Feb, 09:00">
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <label for="return-date" class="form-label fw-bold">Return date</label>
-              <div class="position-relative">
-                <i class="bi bi-calendar-event position-absolute top-50 start-0 translate-middle-y ms-2"></i>
-                <input type="text" class="form-control ps-5" id="return-date" placeholder="Thu 16 Feb, 11:00">
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 d-flex align-items-end">
-              <button type="submit" class="btn btn-primary w-100">
-                <i class="bi bi-search me-2"></i>Search
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- --- How It Works Section --- -->
-    <section class="how-it-works-section py-5">
-      <div class="container">
-        <div class="text-center mx-auto mb-4" style="max-width: 600px;">
-          <div class="homeitwork text-primary fw-bold">HOW IT WORK</div>
-          <h2 class="fw-bold">Rent with following 3 working steps</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="step-card text-center p-4 shadow-sm rounded">
-              <div class="homeiticone mb-3"><i class="bi bi-shield-check fs-2 text-primary"></i></div>
-              <h3>Choose location</h3>
-              <p class="text-muted">Choose your and find your best car</p>
-            </div>
-          </div>
-          <!-- repeat other steps... -->
-        </div>
-      </div>
-    </section>
-
-    <!-- --- Brands Section --- -->
-    <section class="brands-section py-5 bg-light">
-      <div class="container">
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-2 col-md-4 col-6 text-center">
-            <img src="./images/Group (4).png" class="brand-logo img-fluid" alt="Honda Logo">
-          </div>
-          <!-- repeat other logos... -->
-        </div>
-      </div>
-    </section>
-
-    <!-- --- Popular Deals Section --- -->
-    <section class="deals-section py-5">
-      <div class="container">
-        <div class="text-center mb-4">
-          <div class="homeitwork text-primary fw-bold">POPULAR RENTAL DEALS</div>
-          <h2 class="fw-bold">Most popular cars rental deals</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="car-card shadow-sm rounded p-3">
-              <img src="./images/image 12.png" alt="" class="img-fluid mb-3">
-              <h4>Jaguar XE L P250</h4>
-              <div class="rating mb-3"><i class="bi bi-star-fill text-warning"></i> 4.8 (1,436 reviews)</div>
-              <div class="row g-2 mb-3">
-                <div class="col-6"><i class="bi bi-people"></i> 4 Passengers</div>
-                <div class="col-6"><i class="bi bi-gear"></i> Auto</div>
-              </div>
-              <hr>
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <span class="fw-bold text-muted">Price</span>
-                <div class="price text-primary fw-bold">$1,800 <span class="fw-normal">/day</span></div>
-              </div>
-              <a href="#" class="btn btn-primary w-100">Rent Now <i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-          <!-- repeat other car cards... -->
-        </div>
-      </div>
-    </section>
-
-   <section class="why-us-section">
-  <div class="container">
-    <div class="row align-items-center g-5">
-
-      <div class="col-lg-6 text-center">
-        <img src="./images/Audi 1 (5).png" class="img-fluid" alt="Audi Car">
-      </div>
-
-      <div class="col-lg-6">
-        <div class="homeitwork">WHY CHOOSE US</div>
-        <h2>We offer the best experience with our rental deals</h2>
-
-        <div class="feature-item">
-            <div class="homeiticone"><i class="bi bi-lock-fill"></i></div>
-            <div>
-                <h5>Best price guaranteed</h5>
-                <p>Find a lower price? We'll refund 100% of the difference.</p>
-            </div>
-        </div>
-
-        <div class="feature-item">
-            <div class="homeiticone"><i class="bi bi-person-fill"></i></div>
-            <div>
-                <h5>Experienced drivers</h5>
-                <p>Need a driver? We have experienced professionals.</p>
-            </div>
-        </div>
-
-        <div class="feature-item">
-            <div class="homeiticone"><i class="bi bi-chat-dots-fill"></i></div>
-            <div>
-                <h5>24 hour car delivery</h5>
-                <p>Order anytime & get fast delivery.</p>
-            </div>
-        </div>
-
-        <div class="feature-item">
-            <div class="homeiticone"><i class="bi bi-headset"></i></div>
-            <div>
-                <h5>24/7 support</h5>
-                <p>We're always here to help.</p>
-            </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
+        </section>
 
         <section class="testimonials-section">
             <div class="container">
