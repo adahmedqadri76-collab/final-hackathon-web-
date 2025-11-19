@@ -190,6 +190,6 @@ img {
 .hero-img {
     max-width: 100%;
     height: auto;
-    object-fit: contain; /* Keeps aspect ratio */
+    object-fit: contain; 
 }
 
