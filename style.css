@@ -723,3 +723,8 @@
             color: #9CA3AF;
             margin-bottom: 0;
         }
+     
+        .responsive {
+  max-width: 100%;
+  height: auto;
+}
